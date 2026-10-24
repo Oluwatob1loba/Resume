@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rectangle Wall-Thickness Generator — Your Name</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="brand"><a href="../index.html" style="color:inherit;">YOUR NAME</a></div>
+  <div class="links">
+    <a href="../index.html#work">All work</a>
+    <a href="https://github.com/YOUR-USERNAME">GitHub</a>
+  </div>
+</nav>
+
+<div class="wrap">
+<article>
+  <a class="back" href="../index.html">← Back</a>
+  <h1>Rectangle Wall-Thickness Generator</h1>
+  <div class="meta"><span class="status wip">In progress</span></div>
+  <span class="tag">Grasshopper / parametric</span><span class="tag">Boundary operations</span><span class="tag">Plan generation</span>
+  <h2>Overview</h2>
+  <p>A parametric rectangle definition with a slider-driven offset. The offset boundary is subtracted from the original rectangle, outputting the difference — effectively a range of wall thickness options controlled by one parameter. Intended as the base geometry logic for plan-generation experiments.</p>
+  
+  <h2>How it works</h2>
+  
+  <ul>
+    <li><strong>Input:</strong> base rectangle (x/y dimensions)</li>
+    <li><strong>Control:</strong> single slider sets the offset distance</li>
+    <li><strong>Operation:</strong> boundary difference (outer − inner)</li>
+    <li><strong>Output:</strong> closed wall polygon with parametric thickness</li>
+  </ul>
+
+  <h2>Gallery</h2>
+  
+  <div class="placeholder">[ Grasshopper canvas screenshot — full definition ]</div>
+  <figure><div class="placeholder">[ viewport capture — min offset ]</div><figcaption>Minimum offset.</figcaption></figure>
+  <figure><div class="placeholder">[ viewport capture — max offset ]</div><figcaption>Maximum offset.</figcaption></figure>
+
+  <h2>Next steps</h2>
+  
+  <ul>
+    <li>Test slider ranges against realistic wall thicknesses (e.g. 100–400&nbsp;mm)</li>
+    <li>Combine with the partition wall component to subdivide the interior</li>
+  </ul>
+
+</article>
+</div>
+
+<footer>Built with GitHub Pages</footer>
+
+</body>
+</html>
