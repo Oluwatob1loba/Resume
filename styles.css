@@ -65,3 +65,40 @@ footer{
 }
 .tag{display:inline-block; font-size:.75rem; background:#eef1ff; color:var(--accent);
   padding:3px 10px; border-radius:999px; margin:0 6px 6px 0;}
+
+  .villa-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.villa-gallery figure {
+  margin: 0;
+}
+
+.villa-gallery figure:first-child {
+  grid-column: 1 / -1;
+}
+
+.villa-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.villa-gallery figcaption {
+  margin-top: 0.6rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .villa-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .villa-gallery figure:first-child {
+    grid-column: auto;
+  }
+}

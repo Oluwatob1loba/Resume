@@ -25,6 +25,109 @@
   <h2>Overview</h2>
   <p>A full 3D structural model of Le Corbusier's Villa Savoye (Poissy, 1929), modelled with minimal interior by following a YouTube tutorial, then pushed further. The project studies the building's structural system — pilotis, free façade, and roof garden — as a basis for extracting drawings and diagrams. Currently working on pulling presentation content from the model.</p>
   
+  <h2>Gallery</h2>
+
+  <div class="villa-gallery">
+    <figure>
+      <img
+        src="villa-savoye/gallery/Villa_Savoye_ExtArch_rend_landscape.jpeg"
+        alt="Villa Savoye exterior in a landscaped setting, showing the pilotis, ribbon windows, and roof terrace"
+        loading="lazy">
+      <figcaption>
+        <strong>Landscape exterior.</strong>
+        Exterior view showing the pilotis, free ground floor, and roof terrace. Modelled in Rhino.
+      </figcaption>
+    </figure>  
+    
+    <figure>
+      <img
+        src="villa-savoye/gallery/Villa_Savoye_Hero_rend.jpeg"
+        alt="Elevated three-quarter view of Villa Savoye showing the roof terrace, ramp, and overall massing"
+        loading="lazy">
+      <figcaption>
+        <strong>Elevated hero view.</strong>
+        Elevated view of the roof terrace, ramp, and overall massing. Modelled in Rhino.
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img
+        src="villa-savoye/gallery/Villa_Savoye_ExtArch_rend.jpeg"
+        alt="Three-quarter architectural view of the Villa Savoye Rhino model against a plain background"
+        loading="lazy">
+      <figcaption>
+        <strong>Clean architectural view.</strong>
+        Three-quarter view emphasising the building's horizontal massing, pilotis, and roof elements. Rhino model with basic materials.
+      </figcaption>
+    </figure>
+  </div>
+  
+  <section id="pilotis-grid">
+    <h2>Parametric Pilotis Grid Exercise</h2>
+    <p>
+      Building on the Villa Savoye model, I developed a Grasshopper
+      definition to generate pilotis positions from a referenced
+      rectangular footprint. Adjustable X and Y bay-spacing parameters
+      control the grid, while a point-in-curve test removes positions
+      outside the footprint.
+    </p>
+
+    <p>
+      <strong>Current result:</strong> 72 candidate points reduced to
+      56 points inside the footprint, using 300 cm spacing on both axes.
+    </p>
+
+    <p>
+      This study explores coordinate generation, geometric filtering
+      and parametric control. The current definition assumes an
+      axis-aligned rectangular footprint and does not evaluate
+      structural adequacy.
+    </p>
+
+    <p>
+      <a href="villa-savoye/pilotis-grid/010 villa-savoye-pilotis-grid.gh"
+         download>Download Grasshopper definition</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/Oluwatob1loba/Resume/tree/main/villa-savoye/pilotis-grid"
+         target="_blank" rel="noopener noreferrer">View study files and documentation</a>
+    </p>
+
+    
+    <div class="pilotis-grid-gallery">
+      <figure>
+        <img
+          src="villa-savoye/pilotis-grid/images/010-pilotis-grid-output.png"
+          alt="Villa Savoye pilotis grid generated in Grasshopper"
+          loading="lazy">
+        <figcaption>
+          010 — Generated pilotis grid.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="villa-savoye/pilotis-grid/images/011-pilotis-grid-output.png"
+          alt="Alternative view of the Villa Savoye pilotis grid"
+          loading="lazy">
+        <figcaption>
+          011 — Pilotis grid, alternate view.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="villa-savoye/pilotis-grid/images/040-pilotis-grid-pre-pointcull.png"
+          alt="Candidate pilotis positions before points outside the footprint are removed"
+          loading="lazy">
+        <figcaption>
+          040 — Candidate points before culling.
+        </figcaption>
+      </figure>
+    </div>
+
+  </section>
+
+
   <h2>What to extract</h2>
   
   <ul>
@@ -34,11 +137,6 @@
     <li>A turntable screen-recording exported as a GIF or short clip</li>
   </ul>
 
-  <h2>Gallery</h2>
-  
-  <div class="placeholder">[ hero render — insert here ]</div>
-  <figure><div class="placeholder">[ plan drawing ]</div><figcaption>Ground floor plan — scale bar, dimensions.</figcaption></figure>
-  <figure><div class="placeholder">[ section drawing ]</div><figcaption>Longitudinal section through ramp and roof terrace.</figcaption></figure>
 
   <h2>Process notes</h2>
   <p><em>Credit: modelled following this tutorial — <a href="#">[paste YouTube link]</a></em></p>
